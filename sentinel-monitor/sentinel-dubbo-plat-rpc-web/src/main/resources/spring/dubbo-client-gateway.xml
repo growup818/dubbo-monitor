@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="${rpc.app.name}" logger="log4j" version="${rpc.client.version}"
+                       organization="${service.organization}" environment="${rpc.service.environment}"/>
+
+    <dubbo:registry address="${rpc.client.service.address}" protocol="${rpc.client.connection.protocol}"
+                    username="${rpc.service.user.name}" password="${rpc.service.user.password}"
+                    timeout="${rpc.client.registry.timeout}" port="${rpc.service.port}"/>
+
+	<!-- service端 -->
+    <import resource="dubbo-client.xml"/>
+    
+</beans>
+
