@@ -15,7 +15,7 @@
 
         <sentinel.dubbo.plat.rpc.interface.version>1.0.0-SNAPSHOT</sentinel.dubbo.plat.rpc.interface.version>
 
-        <spring.version>4.2.1.RELEASE</spring.version>
+        <spring.version>5.0.2.RELEASE</spring.version>
         <javax.servlet.version>3.0.1</javax.servlet.version> 
         <aspectj.version>1.8.7</aspectj.version> 
         <jstl.version>1.2</jstl.version>
