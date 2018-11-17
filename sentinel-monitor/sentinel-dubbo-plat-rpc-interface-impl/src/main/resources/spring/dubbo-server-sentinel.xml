@@ -10,5 +10,4 @@
         timeout="${rpc.service.timeout}" retries="${dubbo.retries}">
     </dubbo:service>
    
-   
 </beans>
